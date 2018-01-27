@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.Net.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProjectGuid>{fdf5ac78-858e-4098-bc4f-a8ec2ce3d642}</ProjectGuid>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="TestKernelBoot.Cosmos" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="Cosmos.Debug.Kernel" Version="*" />
+    <PackageReference Include="Cosmos.System2" Version="*" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="..\CosmosUI.System\CosmosUI.System.csproj" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Reference Include="CosmosGL.System">
+      <HintPath>..\..\..\CosmosGL\CosmosGL.System\bin\Debug\netstandard2.0\CosmosGL.System.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
