@@ -15,6 +15,7 @@ namespace CosmosUI.System
             Canvas = canvas;
             Graphics = new Graphics(Canvas);
             Graphics.Clear(Colors.CornflowerBlue);
+            
 
             Graphics.FillRectangle(10, 10, 10, 10, Colors.Red);
             Graphics.FillRectangle(20, 10, 10, 10, Colors.Green);
